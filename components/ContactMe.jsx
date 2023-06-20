@@ -4,9 +4,9 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import emailjs from '@emailjs/browser'
 
 
-type Props = {}
+Props = {}
 
-function ContactMe({ }: Props) {
+function ContactMe({ Props }) {
     const form = useRef()
 
     const sendEmail = (e) => {
