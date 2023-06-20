@@ -8,6 +8,7 @@ import Head from 'next/head'
 import Projects from '@component/components/Projects'
 import ContactMe from '@component/components/ContactMe'
 import { ChevronDoubleUpIcon } from '@heroicons/react/24/solid'
+import { Analytics } from '@vercel/analytics/react'
 
 const Home: NextPage = () => {
   const handleHeroScroll = () => {
@@ -55,6 +56,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div >
   )
 }
