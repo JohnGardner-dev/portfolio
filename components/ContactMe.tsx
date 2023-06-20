@@ -7,9 +7,9 @@ import emailjs from '@emailjs/browser'
 type Props = {}
 
 function ContactMe({ }: Props) {
-    const form = useRef()
+    const form = useRef()<HTMLFormElement | null>(null)
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
         emailjs.sendForm('service_dygjwex', 'contact_form', form.current, 'xtA8ndsIZmotKNiID')
