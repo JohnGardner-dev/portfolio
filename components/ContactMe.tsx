@@ -12,11 +12,18 @@ function ContactMe({ }: Props) {
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        emailjs.sendForm('service_dygjwex', 'contact_form', form.current, 'xtA8ndsIZmotKNiID')
+        emailjs
+            .sendForm(
+                'service_dygjwex',
+                'contact_form',
+                form.current ?? '',
+                'xtA8ndsIZmotKNiID'
+            )
             .then((result) => {
                 console.log(result.text)
-                form.current.reset()
-            }, (error) => {
+                form.current!.reset()
+            })
+            .catch((error) => {
                 console.log(error.text)
             })
     }
