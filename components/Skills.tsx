@@ -165,7 +165,7 @@ function Skills({ }: Props) {
                             x: 0,
                         }}
                         viewport={{ once: true }}
-                        src='/Docker.png'
+                        src='/docker.png'
                         className='h-20 w-auto md:h-28 md:w-auto xl:h-32 xl:w-auto' />
                 </div>
                 {/* HTML5 */}
