@@ -153,6 +153,40 @@ function Projects({ }: Props) {
                         <p className='list-disc ml-5 text-sm'>This is where you are now! Working on this portfolio site was a lot of fun and a huge learning experience. I really enjoyed learning Tailwind CSS and using TypeScript for the first time.</p>
                     </div>
                 </article>
+
+                {/* Ruby on Rails Blog */}
+                <article
+                    className='flex flex-col rounded-lg items-center flex-shrink-0 w-[500px] md:w-[600px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'
+                >
+                    <motion.img
+                        initial={{
+                            y: -100,
+                            opacity: 0,
+                        }}
+                        transition={{
+                            duration: 1.2,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        viewport={{ once: true }}
+                        className='w-auto h-28 md:h-32 rounded-md xl:w-auto xl:h-[150px] object-cover object-center'
+                        src="/RoR-CRUD.png" alt=""
+                    />
+
+                    <div className='px-0 space-y-8'>
+                        <h4 className='text-xl md:text-3xl lg:text-4xl font-semibold tracking-wider mt-6 text-center'>Ruby on Rails Blog</h4>
+                        <div className='grid grid-cols-6 gap-5 mt-3'>
+                            <img
+                                className='h-12 w-auto'
+                                src='/ruby.png'
+                                alt=''
+                            />
+                        </div>
+                        <p className='list-disc ml-5 text-sm'>This is a simple CRUD app I build over the weekend using the Ruby on Rails framework. It was a fun and challenging experience and I hope to build it out further in the future. Learning how RoR handles form validation and basic authentication was very interesting.</p>
+                    </div>
+                </article>
             </div>
 
         </motion.div>
