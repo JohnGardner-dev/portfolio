@@ -67,7 +67,7 @@ function Projects({ }: Props) {
                             />
                             <img
                                 className='h-12 w-auto ml-2'
-                                src='/Docker.png'
+                                src='/docker.png'
                                 alt=''
                             />
                             <img
