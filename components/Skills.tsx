@@ -150,6 +150,24 @@ function Skills({ }: Props) {
                         src='/Django.svg'
                         className='h-20 w-auto md:h-28 md:w-auto xl:h-32 xl:w-auto' />
                 </div>
+                {/* Ruby */}
+                <div className='group relative flex'>
+                    <motion.img
+                        initial={{
+                            x: 200,
+                            opacity: 0,
+                        }}
+                        transition={{
+                            duration: 1,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0,
+                        }}
+                        viewport={{ once: true }}
+                        src='/ruby.png'
+                        className='h-20 w-auto md:h-28 md:w-auto xl:h-32 xl:w-auto' />
+                </div>
                 {/* Docker */}
                 <div className='group relative flex'>
                     <motion.img
